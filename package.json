@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Theonlyhamstertoh/weatherapp.git"
+    "url": "git+https://github.com/PrasenJit7/weatherwebsite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Theonlyhamstertoh/weatherapp/issues"
+    "url": "https://github.com/PrasenJit7/weatherwebsite/issues"
   },
-  "homepage": "https://github.com/Theonlyhamstertoh/weatherapp#readme",
+  "homepage": "https://github.com/PrasenJit7/weatherwebsite#readme",
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.11.4",
     "css-loader": "^5.2.3",
