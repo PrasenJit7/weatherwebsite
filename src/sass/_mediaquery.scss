@@ -1,0 +1,106 @@
+// if width is greater than 2000px, change gap to like 200px or less if small.
+@media (min-width: 320px) and (max-width: 1408px) {
+  .today_section {
+    min-width: 350px;
+    .extraInfoIcons {
+      width: 50px;
+    }
+    .WI_e-grid {
+      gap: 15px;
+    }
+  }
+  .WI_area {
+    padding-bottom: 0;
+  }
+
+  .WI_e-area {
+    padding-top: 0;
+  }
+  .tempFS {
+    font-size: 120px;
+    line-height: normal;
+  }
+  .medCloud {
+    width: 90px;
+  }
+}
+@media (max-width: 1008px) {
+  .data_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .date_icon-temp {
+    gap: 10px;
+  }
+  .forecast_section {
+    padding: 15px;
+  }
+
+  .card_title_section {
+    padding-left: 15px;
+  }
+
+  .card_section {
+    overflow: visible;
+  }
+  .cardContainer {
+    overflow: visible;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .btnWrapper {
+    margin-left: 10px;
+  }
+
+  .week_forecast-container {
+    gap: 15px;
+  }
+
+  .WI_Area {
+    margin: 0;
+  }
+
+  .WI_tempWrapper {
+    width: 300px;
+  }
+  .WI_e-area {
+    margin: 0 5px;
+  }
+  .forecast_section {
+    padding-bottom: 10px;
+  }
+
+  .cityLocationFS {
+    font-size: 26.9px;
+  } 
+}
+
+@media (min-width: 500px) and (max-width: 1008px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}
+
+@media (max-width: 340px) {
+  .today_section {
+    min-width: 300px;
+    .extraInfoIcons {
+      width: 40px;
+    }
+    .WI_e-grid {
+      gap: 5px;
+    }
+
+    .WI_area {
+      padding: 0px;
+    }
+
+
+  }
+
+  .WI_tempWrapper {
+    width: 270px;
+  }
+}

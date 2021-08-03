@@ -1,0 +1,103 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+</head>
+<body>
+  <section class='data_wrapper'>
+    <!-- <section class='message_section'>
+      
+     </section> -->
+    <section class='today_section'>
+      <div class='searchbar'>
+        <input type='image' class='input_setting smallSize' src='./img/icons/zzsettings.svg'>
+        <input type='text' value='' class='input_text textFS' placeholder="London">
+        <input type='button' class='input_button textFS' value='Search'>
+      </div>
+      <i class='showError'></i>
+    
+    </section> 
+
+    <section class='forecast_section'>
+      <div class='week_block'>
+        <h4 class='week_title titleFS'>Week Forecast</h4>
+        <ul class='week_forecast-container'>
+        </ul>
+      </div>
+      <div class='hourly_block'>
+        <h4 class='hour_title titleFS'>Hourly Forecast</h4>
+          <div class='hourly_forecast-container'>
+            <ul class='hourForecastList'> 
+            </ul>                  
+        </div>
+      </div>
+
+     
+    </section> 
+    <section class='card_section'>
+      <h4 class='card_title_section titleFS'>Watch Cities</h4>
+      <div class='cardContainer'>
+        <div class='addCard'>
+          <div class='searchbar--card'>
+            <img class='addbutton' src='./img/icons/zzadd.png'>
+            <input type='text' value='' class='card_input textFS' placeholder="Add a card to watch">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </section>
+
+
+  <div class='loadingIcon'><img src='./img/loading.svg'>
+  </div>
+  <div class='setting displayNone'>
+    <div class='setting_top'>
+      <h4 class='titleFS'>Setting</h4>
+      <input type='button' class='saveButton textFS--bold' value='Save'>
+    </div>
+    <hr>
+    <div class='setting_body'>
+      <div class='setting_item'>
+        <h4 class='titleFS'>Temp Unit (F° / C°)</h4>
+        <div class='switcher'>
+          <label class="switch">
+            <input type="checkbox" class='setting_temp'>
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+      </div>
+
+       <div class='setting_item'>
+        <h4 class='titleFS'>Clock Type (12 / 24)</h4>
+        <div class='switcher'>
+          <label class="switch">
+            <input type="checkbox" class='setting_clock'>
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+</body>
+</html>
+

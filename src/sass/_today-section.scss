@@ -1,0 +1,104 @@
+@use "var";
+@use "mixin";
+
+.today_section {
+  background-color: #0e1544;
+  flex-grow: 1;
+  padding-top: 13px;
+  min-width: max-content;
+}
+
+.animatedWeatherArea {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border: none;
+}
+
+.showError {
+  height: 15px;
+  padding-left: 45px;
+  color: rgb(246, 59, 59);
+  opacity: 0;
+}
+
+.animateOut {
+  animation: animateOut 2s forwards;
+}
+
+@keyframes animateOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.WI_area {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.WI_time-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.WI_hourDifference {
+  font-style: normal;
+  padding-left: 9px;
+  padding-bottom: 4px;
+}
+
+.WI_location {
+  width: calc(100% + 20px);
+}
+
+.WI_tempWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  position: relative;
+  .WI_tempUnit {
+    font-size: 30px;
+    align-self: start;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+}
+
+// extra
+.WI_e-area {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.WI_e-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  row-gap: 25px;
+}
+
+.WI_e-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  .WI_e-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.extraInfoIcons {
+  width: 60px;
+}

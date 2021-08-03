@@ -1,0 +1,104 @@
+@use "var";
+@use "mixin";
+@use "searchbar";
+.card_section {
+  background-color: #0e1544;
+  min-width: 300px;
+  overflow: scroll;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  overflow: scroll;
+  height: 40.8rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  padding: 0 20px;
+  margin: 10px;
+  min-width: 240px;
+  min-height: 80px;
+  position: relative;
+
+  transition: 1s all;
+  &:hover {
+    .delete {
+      visibility: visible;
+      &:hover {
+        background-color: rgb(68, 68, 68);
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.card_title_section {
+  padding: 10px;
+}
+
+.delete {
+  position: absolute;
+  visibility: hidden;
+  right: 8px;
+  top: 8px;
+  transition: 0.2s all;
+}
+
+.card_temp {
+  text-align: center;
+}
+
+.addCard {
+  @extend .card;
+  background: linear-gradient(
+    90deg,
+    rgb(19, 155, 160),
+    rgba(39, 146, 179, 0.972)
+  );
+  display: flex;
+  justify-content: flex-start;
+}
+
+.searchbar--card {
+  @extend .searchbar;
+  padding: 0;
+}
+
+.card_input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-color: transparent;
+  // border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.5s all;
+  &:hover {
+  }
+}
+
+.addbutton {
+  cursor: pointer;
+  transition: 0.3s all;
+  width: 17px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #496c9b38;
+  padding: 10px;
+
+  &:hover {
+    transform: scale(1.1);
+    transform: rotate(90deg);
+  }
+}

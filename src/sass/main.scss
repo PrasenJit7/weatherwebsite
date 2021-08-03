@@ -1,0 +1,20 @@
+@use "base";
+@use "searchbar";
+@use "forecast-section";
+@use "var" ;
+@use "mixin";
+@use "card-section";
+@use "modal";
+@use "loadingIcon";
+@use "today-section";
+@use "mediaquery";
+
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+

@@ -1,0 +1,231 @@
+@use "var";
+@use "mixin";
+
+@font-face {
+  font-family: "Nirmala";
+  src: url("../fonts/NIRMALA.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Nirmala";
+  src: url("../fonts/NIRMALAB.TTF") format("truetype");
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nirmala";
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var.$darkBlue;
+}
+
+.data_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.map_section {
+  background-color: rgb(0, 0, 22);
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.tempFS {
+  //h1
+  font-size: 160px;
+  text-shadow: var.$temp_TS;
+  font-weight: bold;
+  line-height: 160px;
+  margin-bottom: 20px;
+  box-shadow: 0 3 15px 3px;
+  color: var.$high_opacity;
+}
+
+.cardFS {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 37px;
+  color: var.$medHigh_opacity;
+}
+
+.messageFS {
+  //h2
+  font-size: 4.5rem;
+  // word-spacing: 100vw;
+  margin-right: 30px;
+  color: var.$full_opacity;
+  font-weight: bold;
+}
+
+.cityLocationFS {
+  //h3
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 37px;
+  color: var.$medHigh_opacity;
+}
+.titleFS {
+  //h4
+  color: var.$medHigh_opacity;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dateFS--big {
+  font-size: 35px;
+  color: var.$medHigh_opacity;
+  // line-height: 30px;
+  font-weight: bold;
+}
+.dateFS {
+  //h4
+  color: var.$medHigh_opacity;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.textFS--bold {
+  font-size: 16px;
+  color: var.$medHigh_opacity;
+  font-weight: bold;
+}
+
+.skinnyFS {
+  //h4
+  color: var.$medHigh_opacity;
+  font-size: 23px;
+  font-weight: regular;
+}
+
+.boldFS {
+  font-size: 17px;
+  color: var.$high_opacity;
+  font-weight: bold;
+}
+.textFS {
+  //p
+  font-size: 13px;
+  color: var.$medHigh_opacity;
+}
+
+i {
+  font-size: 13px;
+  color: var.$medHigh_opacity;
+}
+//weather icon size
+.medCloud {
+  width: 130px;
+  margin-top: 10px;
+}
+
+.iconSize {
+  width: 30px;
+}
+
+.smallSize {
+  width: 20px;
+}
+.superSmallSize {
+  width: 10px;
+}
+.medSize {
+  width: 40px;
+}
+
+// color choices
+.rainColor {
+  color: lightskyblue;
+}
+.color1 {
+  background: linear-gradient(to bottom, #ff9966, #fa4e51);
+}
+
+.color2 {
+  background: linear-gradient(to top, #642b73, #c6426e);
+}
+
+.color3 {
+  background: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+
+.color4 {
+  background: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+}
+
+.color5 {
+  background: linear-gradient(279deg, #dfa87e 0%, #d38648 74%);
+}
+
+.color6 {
+  background: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.color7 {
+  background: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+}
+
+.color8 {
+  background: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+}
+
+.color9 {
+  background: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+}
+
+.color10 {
+  background: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+}
+
+//placeholder
+::placeholder {
+  color: var.$lowMed_opacity;
+  font-weight: normal;
+}
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgba(253, 253, 253, 0.144);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+.hourForecastList::-webkit-scrollbar {
+  height: 9px;
+}
+
+.cardContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.forecast_section::-webkit-scrollbar {
+  display: none;
+}

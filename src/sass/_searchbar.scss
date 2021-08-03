@@ -1,0 +1,47 @@
+@use "var";
+@use "mixin";
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  transition: 0.4s all;
+  margin-bottom: 6px;
+}
+
+.input_setting {
+  padding: 5px;
+  margin-right: 3px;
+  border-radius: 20px;
+  &:hover {
+    background-color: var.$low_opacity;
+  }
+}
+.input_text {
+  background-color: var.$low_opacity;
+  @include mixin.resetO-B;
+  height: 34px;
+  padding: 0px 10px;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  color: var.$medHigh_opacity;
+}
+
+.input_button {
+  background-color: var.$lowMed_opacity;
+  @include mixin.resetO-B;
+  font-family: "Nirmala";
+  font-weight: bold;
+  width: 30%;
+  height: 34px;
+  cursor: pointer;
+  color: var.$medHigh_opacity;
+  border-radius: 0 10px 10px 0;
+  &:hover {
+    background-color: var.$opacity_50;
+  }
+}
+
+
+
